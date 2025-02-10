@@ -1,0 +1,9 @@
+# Exclude archive files
+archive/
+
+# Exclude virtual environment directories
+.venv
+.git
+
+
+
