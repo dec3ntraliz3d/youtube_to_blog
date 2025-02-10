@@ -1,11 +1,11 @@
-# YouTube Transcript to Blog Post Generator
+# YouTube AI Summary
 
-This Python script converts YouTube video transcripts into well-structured blog posts using a reasoning language model via the Ollama platform. It automates the process of fetching video details, extracting transcripts, and summarizing content into a polished blog post.
+This Python script converts YouTube video transcripts into well-structured summarized posts using a local llm . It automates the process of fetching video details, extracting transcripts, and summarizing the content.
 
 ## Features
 
 - Fetches YouTube video title and transcript.
-- Summarizes transcript into a structured blog post.
+- Summarizes transcript i.
 - Saves the generated content as a Markdown (`.md`) file.
 - Supports local use with Ollama's AI reasoning models, such as `deepseek-r1`.
 
@@ -44,8 +44,8 @@ python script_name.py https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 1. The script fetches the title and transcript of the specified YouTube video.
 2. The transcript is passed to an AI model (like `deepseek-r1`) running locally via Ollama.
-3. The AI summarizes the transcript into a structured and formatted blog post.
-4. The generated blog post is saved as a Markdown file using the video title as the filename.
+3. The AI summarizes the transcript into a structured and formatted post.
+4. The generated post is saved as a Markdown file using the video title as the filename.
 
 ## Example Output
 

@@ -144,7 +144,7 @@ def main():
     The blog post is saved as a Markdown (.md) file named after the video title.
     """
     parser = argparse.ArgumentParser(
-        description="Convert a YouTube video transcript into a blog post."
+        description="Summarize youtube videos with AI ."
     )
     parser.add_argument("url", help="The URL of the YouTube video")
     args = parser.parse_args()
@@ -158,7 +158,7 @@ def main():
         transcript = get_transcript(url)
         cleaned_transcript_text = extract_text(transcript)
 
-        logger.info("Creating blog post using AI...")
+        # logger.info("Creating blog post using AI...")
         blog_post = summarize_text(cleaned_transcript_text)
 
         # Ensure the title is safe for use as a filename
@@ -168,7 +168,7 @@ def main():
         with open(filename, "w", encoding="utf-8") as f:
             f.write(blog_post)
 
-        logger.info(f"Blog post '{filename}' created successfully!")
+        logger.info(f"Summary '{filename}' created successfully!")
     except Exception as e:
         logger.error(f"An error occurred: {e}")
         sys.exit(1)
